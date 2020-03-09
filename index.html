@@ -5,26 +5,90 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Landing Page CSS -->
+        <link rel="stylesheet" href="css/index-landingpage/landing-page.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="header1 po-relative">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="navbar-brand">
-                            <img src="#" alt="Favicon"\>
-                        </div>
-                    </div>
-                </div>
+                <!-- Header 1 code -->
+                <nav class="navbar navbar-expand-lg h1-nav">
+                  <a class="navbar-brand" href="#"><img src="#" alt="wrapkit" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header1" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-menu"></span>
+                  </button>
+                   
+                  <div class="collapse navbar-collapse" id="header1">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services <i class="fa fa-angle-down m-l-5"></i>
+                        </a>
+                        <ul class="b-none dropdown-menu animated fadeInUp">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a class="dropdown-item" href="#">One more separated link</a></li>
+
+                        </ul>
+                      </li>
+                     <li class="nav-item"><a class="nav-link" href="#">Freebies</a></li>
+                     <li class="nav-item"><a class="btn btn-outline-success" href="#">Hire Me</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- End Header 1 code -->
             </div>
-        </nav>
+        </div>
+        <div class="static-slider10" style="background-image:url(https://cdn.pixabay.com/photo/2016/02/19/11/40/coffee-shop-1209863_1280.jpg)">
+          <div class="container">
+              <!-- Row  -->
+              <div class="row justify-content-center ">
+                  <!-- Column -->
+                  <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
+                      <span class="label label-rounded label-inverse">Creating Brands</span>
+                      <h1 class="title">ONE BILLON People Use Facebook</h1>
+                      <h6 class="subtitle op-8">Pellentesque vehicula eros a dui pretium ornare. Phasellus congue vel quam nec luctus.In accumsan at eros in dignissim. Cras sodales nisi nonn accumsan.</h6>
+                      <a class="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>Do you Need Help? <i class="ti-arrow-right"></i></span></a>
+                  </div>
+                  <!-- Column -->
+
+              </div>
+          </div>
+      </div>
+        <!-- Custom JS-->
+        <script src="js/custom.js"></script>
+        <script src="js/custom.min.js"></script>
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Script -->
+        <script type="text/javascript">
+          $('a').on('click', function (event) {
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $($anchor.attr('href')).offset().top - 90
+              }, 1000);
+              event.preventDefault();
+              // code 
+              
+          });
+      </script>
     </body>
 </html>
