@@ -1,94 +1,143 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello Bootstrap</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Landing Page CSS -->
-        <link rel="stylesheet" href="css/index-landingpage/landing-page.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div class="header1 po-relative">
-            <div class="container">
-                <!-- Header 1 code -->
-                <nav class="navbar navbar-expand-lg h1-nav">
-                  <a class="navbar-brand" href="#"><img src="#" alt="wrapkit" /></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header1" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="ti-menu"></span>
-                  </button>
-                   
-                  <div class="collapse navbar-collapse" id="header1">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Services <i class="fa fa-angle-down m-l-5"></i>
-                        </a>
-                        <ul class="b-none dropdown-menu animated fadeInUp">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li class="divider" role="separator"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            <li class="divider" role="separator"></li>
-                            <li><a class="dropdown-item" href="#">One more separated link</a></li>
-
-                        </ul>
-                      </li>
-                     <li class="nav-item"><a class="nav-link" href="#">Freebies</a></li>
-                     <li class="nav-item"><a class="btn btn-outline-success" href="#">Hire Me</a></li>
-                    </ul>
-                  </div>
-                </nav>
-                <!-- End Header 1 code -->
+  <head>
+    <title>Suratkopi App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand align-self-center" href="#"><img src="#" width="150"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active align-self-center">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item align-self-center">
+          <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown align-self-center">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+            </li>
+            <a class="btn btn-secondary mx-2"> Log In</a>
+            <a class="btn btn-primary mx-2"> Sign Up</a>
+          </ul>
+          <form action="">
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm">
+              <div class="input-group">
+                <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
             </div>
         </div>
-        <div class="static-slider10" style="background-image:url(https://cdn.pixabay.com/photo/2016/02/19/11/40/coffee-shop-1209863_1280.jpg)">
-          <div class="container">
-              <!-- Row  -->
-              <div class="row justify-content-center ">
-                  <!-- Column -->
-                  <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
-                      <span class="label label-rounded label-inverse">Creating Brands</span>
-                      <h1 class="title">ONE BILLON People Use Facebook</h1>
-                      <h6 class="subtitle op-8">Pellentesque vehicula eros a dui pretium ornare. Phasellus congue vel quam nec luctus.In accumsan at eros in dignissim. Cras sodales nisi nonn accumsan.</h6>
-                      <a class="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>Do you Need Help? <i class="ti-arrow-right"></i></span></a>
-                  </div>
-                  <!-- Column -->
-
-              </div>
-          </div>
       </div>
-        <!-- Custom JS-->
-        <script src="js/custom.js"></script>
-        <script src="js/custom.min.js"></script>
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <!-- Script -->
-        <script type="text/javascript">
-          $('a').on('click', function (event) {
-              var $anchor = $(this);
-              $('html, body').stop().animate({
-                  scrollTop: $($anchor.attr('href')).offset().top - 90
-              }, 1000);
-              event.preventDefault();
-              // code 
-              
-          });
-      </script>
-    </body>
+    </nav>
+    <!-- Landing Page 1st Section -->
+    <section class="wrapper landing-page">
+      <div class="layer">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-md-6 mx-auto my-auto text-center landing-text">
+              <h1 class="my-5">Suratkopi</h1>
+              <p class="my-5">Dimana pecinta kopi dan kedai bertemu.</p>
+              <a class="btn btn-outline-light" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Landing Page 2nd Section -->
+    <section class="wrapper landing-about">
+      <div class="container h-100">
+        <div class="row text-center my-5">
+          <div class="col-md-6 mx-auto">
+            <h1>Apa itu Suratkopi?</h1>
+            <p>Suratkopi merupakan website yang membantu anda mecari kopi maupun kedai sesuai keinginan dan kebutuhan anda.</p>
+          </div>
+        </div>
+        <div class="row text-center my-5">
+          <div class="col-md-4">
+            <h3 class="py-3">Tanpa basa-basi</h3>
+            <i class="fa fa-clock-o py-3" aria-hidden="true"></i>
+            <p class="py-3">Langsung cari apa yang kalian mau? Kopi atau Kedai? Sesuka kalian, akan kami berikan informasi sebanyak-banyaknya</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="py-3">Informasi yang kredibel</h3>
+            <i class="fa fa-file-text-o py-3" aria-hidden="true"></i>
+            <p class="py-3">Seluruh informasi yang keluar pada website ini akan selalu kami review demi kredibilitas informasi yang baik</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="py-3">Disarankan oleh penikmat kopi</h3>
+            <i class="fa fa-thumbs-o-up py-3" aria-hidden="true"></i>
+            <p class="py-3">Disarankan oleh Fiersa Besari selaku pencetus kopi senja... wkwk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Landing Page 3rd Section -->
+    <section class="container-fluid wrapper landing-search">
+      <div class="row h-100">
+        <div class="col-md-6 bg-image"></div>
+        <div class="col-md-6 my-auto">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto text-center">
+                <h3 class="display-4">Bingung mau cari kopi?<br/>Atau Kedai?</h3>
+                  <p class="text-muted mb-4 mt-5">Masukkan nama kopi atau kedai kopi yang mungkin barusan kamu pikirkan...<br/>
+                    Contoh:<br/>
+                    Kopi Americano atau Janji Jiwa
+                  </p>
+                  <form>
+                    <div class="form-group mb-3 mt-5">
+                      <input type="text" placeholder="Nama kopi atau kedai" class="form-control rounded-pill border-0 shadow-sm px-4">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mb-2 rounded-pill shadow-sm">Cari</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Landing Page 4th Section (Blog Section) -->
+    <section class="container wrapper landing-blog">
+
+    </section>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      //JQuery Script
+      $(document).ready(function(){
+        
+      });
+    </script>
+  </body>
 </html>
